@@ -1,13 +1,11 @@
-## Webpaige Foundation [![Build Status](https://travis-ci.org/askcs/webpaige-foundation.png?branch=master)](https://travis-ci.org/askcs/webpaige-foundation)
+# Webpaige Foundation [![Build Status](https://travis-ci.org/askcs/webpaige-foundation.png?branch=master)](https://travis-ci.org/askcs/webpaige-foundation)
 
----
-
-### Foundation framework of WebPaige projects
+## Foundation framework of WebPaige projects
 
 A **compilation boilerplate** based AngularJS, Generator-Angular for Yeoman, Angular-Seed, RequireJS, Jade, SASS, Twitter Bootstrap, HTML5 Boilerplate and many handy Grunt plugins for making development processes streamlined.
 
 
-### Installation
+## Installation
 Please complete the steps to setup project on your local development environment. This is a one time setup process.
 
 1. Please make sure that **Node** is installed, otherwise please use this link to [download and install](http://nodejs.org/).
@@ -52,7 +50,7 @@ Please complete the steps to setup project on your local development environment
 
 
 
-### Development workflow
+## Development workflow
 
 * Please **start your webserver** with;
 
@@ -95,7 +93,7 @@ Please complete the steps to setup project on your local development environment
 		grunt prerelease | patch | minor | major
 
 
-### PhantomJS
+## PhantomJS
 In order for the unit task to work properly, [PhantomJS](http://www.phantomjs.org/) should be installed (unless an another browser selected) and in the system PATH (if you can run "phantomjs" at the command line, this task should work).
 
 Unfortunately, PhantomJS cannot be installed automatically via npm or grunt, so you need to install it yourself. There are a number of ways to install PhantomJS.
@@ -110,7 +108,7 @@ Note that the `phantomjs` executable needs to be in the system `PATH` for grunt 
 * [How do I change the PATH variable in Linux](https://www.google.com/search?q=How+do+I+change+the+PATH+variable+in+Linux)
 
 
-### Git Commit Message Conventions
+## Git Commit Message Conventions
 There is a special `Grunt` plugin is installed and allows us;
 
 - running for generating `CHANGELOG.md` logs by script. 
@@ -152,7 +150,7 @@ Scope is optional and could be anything specifying place of the commit 	change. 
 Please [refer to this documentation](https://docs.google.com/a/ask-cs.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.em2hiij8p46d) for more information on these conventions. 
 
 
-### Credits
+## Credits
 Projects and frameworks has been used for making this;
 
 * AngularJS
