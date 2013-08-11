@@ -1,8 +1,35 @@
 .bs-header
   .container
-    h1 Partial 2
-    p
-      | Aliquam mollis elit nec nisl varius, in pretium velit pellentesque. Nam in imperdiet leo, fringilla commodo
-      | dolor. Donec neque massa, ullamcorper sit amet auctor ac, viverra sit amet enim Phasellus adipiscing porttitor
-      | lectus, ac consequat turpis convallis quis. Nulla ac arcu elementum, venenatis lacus id, lacinia tellus.
-      | Duis eget enim orci. Donec justo libero, convallis non tempor id, aliquet commodo nunc.
+    h1 Partial 2 (Contact)
+
+    hr
+
+    form(ng-submit='send()')
+      fieldset
+
+        .form-group
+          label(for='name') Name
+          input#name.form-control(type='text', 
+          												placeholder='Enter your name',
+          												ng-model='contact.name')
+
+        .form-group
+          label(for='email') Email address
+          input#email.form-control(type='text', 
+          													placeholder='Enter email',
+          													ng-model='contact.email')
+
+        .form-group
+          label(for='message') Message
+          textarea#message.form-control(rows='3',
+          															ng-model='contact.message')
+
+        .checkbox
+          label
+            input(type='checkbox',
+            			ng-model='contact.confirmed')
+            | Confirm message
+        
+        br
+
+        button.btn.btn-default(type='submit') Send your message

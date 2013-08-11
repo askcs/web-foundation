@@ -9,6 +9,17 @@ define(
         '$scope',
         function ($scope)
         {
+          $scope.contact = {
+            name:       null,
+            email:      null,
+            message:    null,
+            confirmed:  false
+          };
+
+          $scope.send = function ()
+          {
+            $scope.sending = $scope.contact;
+          };
         }
       ]
     );
