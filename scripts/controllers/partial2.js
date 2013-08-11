@@ -1,1 +1,1 @@
-define(["controllers/controllers"],function(e){e.controller("partial2",["$scope",function(e){}])});
+define(["controllers/controllers"],function(e){e.controller("partial2",["$scope",function(e){e.contact={name:null,email:null,message:null,confirmed:!1},e.send=function(){e.sending=e.contact}}])});
