@@ -1,0 +1,50 @@
+.bs-header
+  .container
+    h1 Partial 1
+    p
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+.bs-old-docs
+  .container
+    strong
+      a(href='#') Maecenas sit amet
+    |  aenean mi sapien, imperdiet malesuada dolor in, pulvinar euismod dolor.
+    a(href='#')  Integer hendrerit
+    |  get tellus.
+
+.container.bs-docs-container
+  .row
+    .col-lg-3
+      .bs-sidebar
+        ul.nav.bs-sidenav
+          li
+            a(href='#') Sidemenu item 1
+          li
+            a(href='#') Sidemenu item 2
+          li
+            a(href='#') Sidemenu item 3
+
+    .col-lg-9
+      .bs-docs-section
+
+        .page-header
+          h1#download Donec quis libero
+
+        p.lead
+          | Pellentesque volutpat odio elit, a auctor massa blandit in. Proin dapibus sem sit amet augue porttitor
+          | lacinia. Nam placerat est dui, ac vulputate elit mattis sed. Donec pellentesque ac nulla id gravida.
+
+        h3 Donec nunc dolor, interdum
+
+        p
+          | Aliquam erat volutpat. Quisque ipsum metus, convallis non lectus sed, volutpat vestibulum magna.
+          | Pellentesque eu tellus porttitor, pretium est et, egestas magna. Donec sit amet nunc eget nisi sodales
+          | feugiat. Donec placerat lobortis lorem, nec suscipit ipsum facilisis at. Phasellus adipiscing porttitor
+          | lectus, ac consequat turpis convallis quis. Nulla ac arcu elementum, venenatis lacus id, lacinia tellus.
+          | Duis eget enim orci. Donec justo libero, convallis non tempor id, aliquet commodo nunc.
+
+        #callout-less-compilation.bs-callout.bs-callout-warning
+          h4 Service integration
+          p
+            | This is originating from a service.
+            #test Hi {{name}}

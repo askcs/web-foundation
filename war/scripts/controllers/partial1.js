@@ -1,0 +1,1 @@
+define(["controllers/controllers","services/user"],function(e){e.controller("partial1",["$scope","User",function(e,t){e.name=t.get()}])});

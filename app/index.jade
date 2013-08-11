@@ -1,0 +1,52 @@
+extends layout
+
+block navbar
+  .navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav
+    .container
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#/home') Home
+      .nav-collapse.collapse.bs-navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='#/partial1') Partial1
+          li
+            a(href='#/partial2') Partial2
+
+block footer
+  footer
+    .container
+      p.text-muted.credit.pull-left
+        | Some footer text
+        a(href='#')  and a link
+      p.text-muted.pull-right(style='margin-top:20px')
+        | {{ 'Current version is v%VERSION%. Released: %RELEASED%' | interpolate }}
+
+block icons
+  link(rel='apple-touch-icon-precomposed', sizes='144x144', href='icons/apple-touch-icon-144-precomposed.png')
+  link(rel='apple-touch-icon-precomposed', sizes='114x114', href='icons/apple-touch-icon-114-precomposed.png')
+  link(rel='apple-touch-icon-precomposed', sizes='72x72', href='icons/apple-touch-icon-72-precomposed.png')
+  link(rel='apple-touch-icon-precomposed', href='icons/apple-touch-icon-57-precomposed.png')
+  link(rel='shortcut icon', href='icons/favicon.png')
+
+block iestuff
+  //if lt IE 7
+    p.chromeframe
+      | You are using an outdated browser.
+      a(href='http://browsehappy.com/') Upgrade your browser today
+      | or
+      a(href='http://www.google.com/chromeframe/?redirect=true') install Google Chrome Frame
+      | to better experience this site.
+  //if lt IE 9
+    script(src='vendors/es5-shim/es5-shim.js')
+    script(src='vendors/json3/lib/json3.min.js')
+
+block analytics
+  // Google Analytics: change UA-XXXXX-X to be your site's ID.
+  script
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src='//www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
