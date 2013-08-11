@@ -6,7 +6,7 @@ Foundation framework of WebPaige projects which is based on AngularJS, Generator
 ## Installation
 [more information](https://github.com/askcs/webpaige-foundation/wiki/Installation)
 
-## Development workflow
+## Development Workflow
 [more information](https://github.com/askcs/webpaige-foundation/wiki/Development-workflow)
 
 ## Git Commit Message Conventions
