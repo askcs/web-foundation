@@ -8,5 +8,4 @@ npm-debug.log
 src/META-INF/
 src/log4j.properties
 war/WEB-INF/classes/
-war/vendors
 libpeerconnection.log
