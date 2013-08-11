@@ -23,7 +23,7 @@ module.exports = function (karma)
     logLevel: karma.LOG_INFO,
     autoWatch: true,
     browsers: ['Firefox'],
-    captureTimeout: 5000,
+    captureTimeout: 30000,
     singleRun: false,
     proxies: {
       '/': 'http://localhost:9000/'

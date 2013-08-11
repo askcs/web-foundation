@@ -1,4 +1,4 @@
-# Webpaige Foundation [![Build Status](https://travis-ci.org/askcs/webpaige-foundation.png?branch=master)](https://travis-ci.org/askcs/webpaige-foundation)
+# Webpaige Foundation [![Build Status](https://travis-ci.org/Cengizism/base.png?branch=master)](https://travis-ci.org/Cengizism/base)
 
 Foundation framework of WebPaige projects which is based on AngularJS, Generator-Angular for Yeoman, Angular-Seed, RequireJS, Jade, SASS, Twitter Bootstrap, HTML5 Boilerplate and many handy Grunt plugins for making development processes streamlined.
 
@@ -33,16 +33,20 @@ Please complete the steps to setup project on your local development environment
 	Please install **Grunt** and **Bower** for managing your watchers, compilers, test frameworks and runners, servers and dependency management.
 
 		npm install -g grunt-cli bower
+		
+5. This step involves cloning the project and installing in your workspace;
+
+		git clone https://github.com/askcs/webpaige-foundation
 	
-5. We will be fetching **node dependencies** and Grunt plugins with;
+6. We will be fetching **node dependencies** and Grunt plugins with;
 
 		npm install
 		
-6. Please install **third-libraries** with **Bower** as well;
+7. Please install **third-libraries** with **Bower** as well;
 
 		bower install 
 		
-7. At this stage project should have been installed and ready to be run. Please run your web server with (on `http://localhost:9000/`);
+8. At this stage project should have been installed and ready to be run. Please run your web server with (on `http://localhost:9000/`);
 
 		grunt server
 
