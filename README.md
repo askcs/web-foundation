@@ -16,7 +16,7 @@ Please complete the steps to setup project on your local development environment
 
 	Test if Ruby is installed on your command line with;
 		
-		ruby -version
+		ruby --version
 		
 3. **Compass and SASS** gem for Ruby is needed to run SASS compilers on Ruby. Please install them through your command line.
 	
