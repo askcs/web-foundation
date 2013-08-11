@@ -22,7 +22,7 @@ module.exports = function (karma)
     colors: true,
     logLevel: karma.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeCanary'],
+    browsers: ['Firefox'],
     captureTimeout: 30000,
     singleRun: false,
     proxies: {
