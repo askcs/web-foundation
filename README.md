@@ -1,7 +1,6 @@
 ## Webpaige Foundation
 
 [![Build Status](https://travis-ci.org/askcs/webpaige-foundation.png?branch=master)](https://travis-ci.org/askcs/webpaige-foundation)
-[![Dependency Status](https://gemnasium.com/askcs/webpaige-foundation.png)](https://gemnasium.com/Cengizism/askcs/webpaige-foundation)
 
 ### Foundation framework of WebPaige projects
 
