@@ -1,0 +1,1 @@
+define(["app"],function(e){e.run(["$rootScope","$location",function(e,t){e.$on("$routeChangeStart",function(e,n,r){t.path()=="/home"?$("body").addClass("bs-docs-home"):$("body").removeClass("bs-docs-home")}),e.$on("$routeChangeSuccess",function(e,t,n){}),e.$on("$routeChangeError",function(e,t,n,r){console.error("Error: changing routes!")})}])});
