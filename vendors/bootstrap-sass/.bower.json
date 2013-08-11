@@ -1,0 +1,20 @@
+{
+  "name": "sass-bootstrap",
+  "version": "3.0.0",
+  "main": [
+    "lib/bootstrap.scss"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "_cacheHeaders": {
+    "Content-Length": "389826",
+    "Content-Type": "application/zip",
+    "Content-Disposition": "attachment; filename=sass-twitter-bootstrap-3.0.0-wip.zip"
+  },
+  "_source": "https://github.com/jlong/sass-twitter-bootstrap/archive/3.0.0-wip.zip",
+  "_target": "*"
+}
