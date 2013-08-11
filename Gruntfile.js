@@ -304,11 +304,11 @@ module.exports = function (grunt)
       requirejs: {
         compile: {
           options: {
-            appDir: 'app/scripts/',
+            appDir: '<%= paths.app %>/scripts/',
             baseUrl: '.',
-            dir: 'dist/scripts/',
+            dir: '<%= paths.dist %>/scripts/',
             optimize: 'uglify',
-            mainConfigFile:'./app/scripts/main.js',
+            mainConfigFile:'./<%= paths.app %>/scripts/main.js',
             logLevel: 0,
             findNestedDependencies: true,
             fileExclusionRegExp: /^\./,
