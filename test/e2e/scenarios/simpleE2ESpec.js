@@ -26,7 +26,7 @@ describe('Simple E2e Test', function ()
 
 		input('contact.confirmed').check(true);
 		
-		sleep(20);
+		sleep(1);
 
 		element(':button').click();
 

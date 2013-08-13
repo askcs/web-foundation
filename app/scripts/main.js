@@ -1,3 +1,8 @@
+if (window.location.port == '8080')
+{
+  document.getElementsByTagName('html')[0].setAttribute('ng-app');
+}
+
 require.config (
   {
     paths: {
