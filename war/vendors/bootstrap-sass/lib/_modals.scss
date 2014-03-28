@@ -10,6 +10,18 @@
 // Kill the scroll on the body
 .modal-open {
   overflow: hidden;
+
+
+  // Account for hiding of scrollbar
+  
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-right: 15px
+  }
+}
+
+body.modal-open {
+  margin-right: 15px
 }
 
 // Container that the modal scrolls within
@@ -29,7 +41,7 @@
     @include translate(0, -25%);
     @include transition-transform(0.3s ease-out);
   }
-  &.fade.in .modal-dialog { @include translate(0, 0)}
+  &.in .modal-dialog { @include translate(0, 0)}
 }
 
 // Shell div to position the modal with bottom padding
@@ -49,7 +61,7 @@
   border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
-  @include background-clip(padding-box);
+  background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: none;
 }
@@ -65,7 +77,7 @@
   background-color: $modal-backdrop-bg;
   // Fade for backdrop
   &.fade { @include opacity(0); }
-  &.fade.in { @include opacity(.5); }
+  &.in { @include opacity(.5); }
 }
 
 // Modal header
