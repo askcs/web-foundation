@@ -4,14 +4,15 @@
 
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .25em .6em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   color: $label-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  background-color: $gray-light;
   border-radius: .25em;
 
   // Add hover effects, but only for links
@@ -21,38 +22,25 @@
       color: $label-link-hover-color;
       text-decoration: none;
       cursor: pointer;
+      background-color: darken($gray-light, 10%);
     }
-  }
-
-  // Empty labels collapse automatically (not available in IE8)
-  &:empty {
-    display: none;
   }
 }
 
 // Colors
 // Contextual variations (linked labels get darker on :hover)
-
-.label-default {
-  @include label-variant($label-default-bg);
-}
-
-.label-primary {
-  @include label-variant($label-primary-bg);
+.label-danger {
+  @include label-variant($label-danger-bg);
 }
 
 .label-success {
   @include label-variant($label-success-bg);
 }
 
-.label-info {
-  @include label-variant($label-info-bg);
-}
-
 .label-warning {
   @include label-variant($label-warning-bg);
 }
 
-.label-danger {
-  @include label-variant($label-danger-bg);
+.label-info {
+  @include label-variant($label-info-bg);
 }

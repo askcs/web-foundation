@@ -58,9 +58,7 @@
 
     $tip.removeClass('fade top bottom left right in')
 
-    // IE8 doesn't accept hiding via the `:empty` pseudo selector, we have to do
-    // this manually by checking the contents.
-    if (!$tip.find('.popover-title').html()) $tip.find('.popover-title').hide()
+    $tip.find('.popover-title:empty').hide()
   }
 
   Popover.prototype.hasContent = function () {
@@ -75,10 +73,6 @@
       || (typeof o.content == 'function' ?
             o.content.call($e[0]) :
             o.content)
-  }
-
-  Popover.prototype.arrow = function () {
-    return this.$arrow = this.$arrow || this.tip().find('.arrow')
   }
 
   Popover.prototype.tip = function () {

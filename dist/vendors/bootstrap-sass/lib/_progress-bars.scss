@@ -18,13 +18,19 @@
   to    { background-position: 0 0; }
 }
 
+// IE9
+@-ms-keyframes progress-bar-stripes {
+  from  { background-position: 40px 0; }
+  to    { background-position: 0 0; }
+}
+
 // Opera
 @-o-keyframes progress-bar-stripes {
   from  { background-position: 0 0; }
   to    { background-position: 40px 0; }
 }
 
-// Spec and IE10+
+// Spec
 @keyframes progress-bar-stripes {
   from  { background-position: 40px 0; }
   to    { background-position: 0 0; }
@@ -61,7 +67,7 @@
 // Striped bars
 .progress-striped .progress-bar {
   @include gradient-striped($progress-bar-bg);
-  background-size: 40px 40px;
+  @include background-size(40px 40px);
 }
 
 // Call animation for the active one
@@ -78,18 +84,22 @@
 // Variations
 // -------------------------
 
+// Danger (red)
+.progress-bar-danger {
+  @include progress-bar-variant($progress-bar-danger-bg);
+}
+
+// Success (green)
 .progress-bar-success {
   @include progress-bar-variant($progress-bar-success-bg);
 }
 
-.progress-bar-info {
-  @include progress-bar-variant($progress-bar-info-bg);
-}
-
+// Warning (orange)
 .progress-bar-warning {
   @include progress-bar-variant($progress-bar-warning-bg);
 }
 
-.progress-bar-danger {
-  @include progress-bar-variant($progress-bar-danger-bg);
+// Info (teal)
+.progress-bar-info {
+  @include progress-bar-variant($progress-bar-info-bg);
 }

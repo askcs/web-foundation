@@ -22,19 +22,6 @@
   }
 }
 
-// Sizing options
-//
-// Remix the default form control sizing classes into new ones for easier
-// manipulation.
-
-.input-group-lg > .form-control,
-.input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn { @extend .input-lg; }
-.input-group-sm > .form-control,
-.input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn { @extend .input-sm; }
-
-
 // Display as table-cell
 // -------------------------
 .input-group-addon,
@@ -57,12 +44,13 @@
 // Text input groups
 // -------------------------
 .input-group-addon {
+  @include box-sizing(border-box);
   padding: $padding-base-vertical $padding-base-horizontal;
   font-size: $font-size-base;
   font-weight: normal;
-  line-height: 1;
+  line-height: $line-height-base;
   text-align: center;
-  background-color: $input-group-addon-bg;
+  background-color: $gray-lighter;
   border: 1px solid $input-group-addon-border-color;
   border-radius: $border-radius-base;
 
@@ -71,11 +59,13 @@
     padding: $padding-small-vertical $padding-small-horizontal;
     font-size: $font-size-small;
     border-radius: $border-radius-small;
+    line-height: $line-height-small;
   }
   &.input-lg {
     padding: $padding-large-vertical $padding-large-horizontal;
     font-size: $font-size-large;
     border-radius: $border-radius-large;
+    line-height: $line-height-large;
   }
 
   // Nuke default margins from checkboxes and radios to vertically center within.
